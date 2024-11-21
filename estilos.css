@@ -1,0 +1,929 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Lugrasimo&family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Gajraj+One&family=Lugrasimo&family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Zen+Tokyo+Zoo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section[id]{
+  scroll-margin-top: 90px;
+}
+
+header.main-header {
+    background-image: url(fotos/humoh\ 1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+  }
+  nav.nav-bar {
+    background-color: rgba(255, 255, 255, 0.093);
+    backdrop-filter: blur(30px);
+    background-clip: padding-box;
+    box-shadow: 0px 4px 10px 0px #000000b7;  
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  /****************************************** MEDIA QUERY NAV ******************************************/
+
+  @media (max-width: 768px){
+    nav.nav-bar{
+      display: none;
+    }
+  }
+
+  ul.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  ul.container li {
+    list-style-type: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+.container a{
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  transition: all 0.4s;
+  letter-spacing: 2px;
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+  text-shadow: 1px 2px 2px #000000d4;
+}
+.container a:hover{
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 2px 3px #000000;
+}
+  li.logo img {
+    max-width: 70px;
+    filter: drop-shadow(3px 1px 2px #000000);
+  }
+
+  .logo img:hover{
+    transform: none;
+    box-shadow: none;
+  }
+
+.icon .fab{
+  position: relative;
+  left: 8px;
+  top: 5px;
+  font-size: 35px;
+}
+
+/********************************** INICIO NOMBRE BANDA *********************************************/
+
+.nombre-banda h1{
+  position: relative;
+  top: 400px;
+  color: #7da700;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-family: "Zen Tokyo Zoo", system-ui;
+}
+
+
+@media (max-width: 600px){
+  .nombre-banda h1{
+    font-size: 100px;
+  }
+}
+
+
+/************************************* FIN NOMBRE BANDA *********************************************/
+
+
+/************************************ INICIO VIDEO ANGOSTO ***************************************/
+
+#hero{
+  height: 35vh;
+  position: relative;
+}
+.promo{
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(98, 98, 98, 0.156);
+  backdrop-filter: blur(5px);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  box-shadow: 0px 0px 13px 1px #000000;
+}
+.promo h1{
+  font-size: 5.5rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  letter-spacing: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+  0 0 15px #a80000,
+  0 0 20px #d818ff,
+  0 0 30px #ffbe18,
+  0 0 40px #ff1818,
+  0 0 55px #ff0000,
+  0 0 75px #ff189f;
+  color: #fffefe;
+}
+
+.vidmed{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.5;
+  mix-blend-mode: overlay; 
+}
+
+/***************************************** FIN VIDEO ANGOSTO ***************************************/
+
+
+/**************************************** INICIO REDES LATERAL *********************************************/
+  .wrapper{
+    border-radius: 0px 200px 200px 0px;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    background-clip: padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: fit-content;
+    position: relative;
+    top: 250px;
+    box-shadow: 4px 0px 6px 0px #000000b7;
+    position: fixed;
+    z-index: 999;
+}
+.wrapper .icon{
+    position: relative;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #000000;
+    text-decoration: none;
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.574);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  a .fa-instagram{
+    color: #d400ff;
+    filter: drop-shadow(1px 2px 2px #000000a7);
+  }
+
+  a .fa-youtube{
+    color: #ff1100;
+    filter: drop-shadow(1px 2px 2px #0000009c);
+  }
+
+   a .fa-facebook {
+    color: #006aff;
+    filter: drop-shadow(1px 2px 2px #0000008a);
+  }
+
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #8b30e1;
+    color: #ffffff;
+  }
+  
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #286ed1;
+    color: #ffffff;
+  }
+
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #d2281c;
+    color: #ffffff;
+  }
+  /********************************** FIN REDES LATERAL *********************************************/
+
+
+  @media (max-width: 500px){
+    .wrapper {
+     position: absolute;
+     top: 90px;
+     width: 50px;
+    }
+    .wrapper .icon{
+      width: 40px;
+      height: 40px;
+      position: relative;
+      right: 20%;
+    }
+
+    .icon .fab {
+      position: relative;
+      right: 20%;
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+  
+
+/**************************************** INICIO VIDEOS DEMO ***************************************/
+
+.video-caja{
+  background-image: url(fotos/grisamarillo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.videofx{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 200px 200px 200px 200px;
+  margin: 30px;
+  box-shadow: 13px 15px 19px -1px rgba(0, 0, 0, 1);
+  
+}
+.videoxxx{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 200px 200px 200px 200px;
+  margin: 30px;
+  box-shadow: 13px 15px 19px -1px rgba(0, 0, 0, 1);
+}
+
+/****************************************** MEDIA QUERY ******************************************/
+
+@media (max-width: 500px) {
+  .video-caja{
+    width: 100%;
+    background-size: center; 
+  }
+}
+
+/********************************************* FIN VIDEOS DEMO ***************************************/
+
+/******************************************** INICIO BANDA ******************************************/
+
+#wrapper-banda{
+  padding: 170px;
+  height: 100vh auto;
+  background-image: url(fotos/humo\ 2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:3px;
+  box-shadow: 0px -5px 10px 0px #0000009f;
+}
+.tarjeta{
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  transition: 300ms;
+}
+.tarjeta:hover{
+  transform: scale(1);
+}
+.tarjeta:hover img{
+ transform: scale(1.1);
+ filter: grayscale(100%);
+ box-shadow: 16px 15px 17px -11px rgba(0, 0, 0, 1);
+}
+.tarjeta img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 300ms;
+}
+.card_content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card_content h3{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 2px 2px #000000d4;
+  z-index: 99;
+}
+
+/****************************************** MEDIA QUERY ******************************************/
+
+@media (max-width: 500px) {
+  #wrapper-banda{
+    padding: 60px;
+  }
+}
+
+@media (max-width: 768px){
+  .tarjeta{
+     width: 250px;
+     height: 250px;    
+  }
+}
+
+@media (max-width: 1024px){
+  #wrapper-banda{
+    padding: 70px;
+ }
+}
+
+/****************************************** FIN BANDA ***************************************/
+
+
+/******************************************INICIO FECHAS**********************************/
+
+#fechas{
+  text-transform: uppercase;
+  position: relative;
+  height: 1000px;
+  font-family: "Bebas Neue", sans-serif;  
+  background-image: url(fotos/wesley.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.data-principal{
+  font-size: 80px;
+  padding-top: 50px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+.linea{
+  border-top: 1px solid rgb(255, 255, 255);
+  height: 1px;
+  text-shadow: 1px 1px 2px #000000;
+  width: 70%;
+  margin: 20px auto 0 auto;
+}
+.caja-lugares{
+  width: 70%;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px #000000;
+  color: #ffffff;
+}
+.dir{
+  font-size: 30px;
+}
+.banda{
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+
+/********************************************* FIN FECHAS *************************************/
+
+
+/***************************************** INICIO GALERIA DE FOTOS ****************************************/
+
+#child-page-listing{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background-color: #000000;
+}
+
+#child-page-listing h1{
+  font-size: 80px;
+  padding: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 2px 2px #000000d4;
+  font-family: "Bebas Neue", sans-serif;
+  background-image: url(fotos/grisamarillo.jpg);
+}
+img {
+  width: 100%; 
+  height: auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 0.5em;
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+.location-listing {
+  position: relative;
+}
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.2s;
+  transform: scale(1.1);
+}
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(33, 33, 33, 0.526);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px #000000;
+  border-radius: 10px;
+}
+.location-listing:hover .location-title {
+  opacity: 1;
+  border-radius: 5px;
+}
+.location-listing:hover .location-image img {
+  filter: blur(1px);
+  border-radius: 10px;
+}
+
+/****************************************** MEDIA QUERY GALERIA FOTOS ******************************************/
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(5px);
+  }
+}
+
+/***************************************** FIN GALERIA DE FOTOS ****************************************/
+
+body{
+  margin:0;
+  padding:0;
+  position:0;
+  background-image: url(fotosgallery/humo\ 22.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+}
+
+.containergallery{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items:center;
+  justify-content: center;
+}
+
+.item1{
+  height:360px;
+  width: 430px;
+  padding:20px;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(fotosgallery/luis.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s;
+  
+}
+.item1:hover{
+  z-index: 9;
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 7px #000000);
+}
+
+.item2{
+  height:360px;
+  width: 430px;
+  padding:20px;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(fotosgallery/astro.JPG);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.item2:hover{
+  z-index: 9;
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 7px #000000);
+}
+.item3{
+  height:360px;
+  width: 430px;
+  padding:20px;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(fotosgallery/cuervo.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.item3:hover{
+  z-index: 9;
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 7px #000000);
+}
+.item4{
+  height:360px;
+  width: 430px;
+  padding:20px;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(fotosgallery/fede.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.item4:hover{
+  z-index: 9;
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 7px #000000);
+}
+.item5{
+  height:360px;
+  width: 430px;
+  padding:20px;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(fotosgallery/show.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.item5:hover{
+  z-index: 9;
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 7px #000000);
+}
+.item6{
+  height:360px;
+  width: 430px;
+  padding:20px;
+  margin: 3px;
+  border-radius: 5px;
+  background-image: url(fotosgallery/show.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.item6:hover{
+  z-index: 9;
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 7px #000000);
+}
+
+/********************************************** INICIO FOOTER ****************************************/
+
+footer{
+  background-image: url(fotos/gracechapel-blue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  opacity: 0,9;
+  transition: 0.9s;
+  filter: drop-shadow(3px 4px 2px #000000ce);
+}
+.socialIcons a:hover i{
+  color: rgb(255, 0, 0);
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.toxica-footer{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-size: 55px;
+  position: relative;
+  bottom: 30px;
+  text-shadow: 1px 2px 2px #000000d4;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.made-music{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 1px 2px 2px #000000d4;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.mail-banda a{
+  color: #ffffff;
+  font-size: 25px;
+  text-decoration: none;
+}
+.mail-banda {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 2px 2px #000000d4;
+  letter-spacing: 3px;
+}
+.footerNav ul li a{
+  color: #ffffff;
+  margin: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 1px 2px 2px #000000d4;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 2.3em;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover{
+  color: #ff0000;
+  text-shadow: 2px 7px 4px #000000;
+}
+.footerBottom{
+  background-color: rgba(50, 50, 50, 0.364);
+  backdrop-filter: blur(10px);
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  padding: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.cajanuevologo{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+}
+
+.logonuevo{
+  filter: drop-shadow(3px 2px 3px #000000);
+  width: 250px;
+  object-fit: cover;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footerBottom p{
+  font-size: 15px;
+  padding: 5px;
+  position: relative;
+  top: 5px;
+  color: white;
+}
+.footerBottom a{
+  text-decoration: none;
+  color: #ff0000;
+}
+.designer{
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/****************************************** MEDIA QUERY FOOTER******************************************/
+
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:80%;
+      text-align: center;
+      position: relative;
+      left: 18px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+/******************************************** FIN FOOTER ***************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
